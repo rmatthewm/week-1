@@ -1,3 +1,5 @@
+# add code below ...
+
 def palindrome(word):
     
     word = word.lower()
@@ -12,5 +14,12 @@ def palindrome(word):
     return cleanWord == cleanWord[::-1]
 
     
+def parentheses(sequence):
+  openCounter = 0
+  for character in sequence:
+      if character == '(':    
+        openCounter += 1
+      elif character == ')':
+        openCounter -= 1
 
-# add code below ...
+  return openCounter == 0
